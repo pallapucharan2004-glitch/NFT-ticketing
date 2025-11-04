@@ -15,6 +15,7 @@ interface BuyTicketModalProps {
 const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ openModal, closeModal }) => {
   const [eventId, setEventId] = useState<string>('')
   const [receiverAddress, setReceiverAddress] = useState<string>('2ZTFJNDXPWDETGJQQN33HAATRHXZMBWESKO2AUFZUHERH2H3TG4XTNPL4Y')
+  
   const [loading, setLoading] = useState<boolean>(false)
   const [ticketPrice, setTicketPrice] = useState<number | null>(null)
   const { enqueueSnackbar } = useSnackbar()

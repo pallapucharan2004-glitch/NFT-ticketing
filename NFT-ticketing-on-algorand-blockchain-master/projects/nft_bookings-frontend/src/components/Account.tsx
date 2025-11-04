@@ -8,7 +8,9 @@ const Account = () => {
   const algoConfig = getAlgodConfigFromViteEnvironment()
 
   const networkName = useMemo(() => {
+    
     return algoConfig.network === '' ? 'localnet' : algoConfig.network.toLocaleLowerCase()
+    
   }, [algoConfig.network])
 
   return (
